@@ -2,7 +2,6 @@
 
 The calculation methods are inspired from Rails. This package uses `underscore-calculate` under the hood which only considers numbers, and returns `undefined` for empty collections. We use this package to graph data from collections. 
 
-
 Each calculation method either returns the value, values, or an object with fields and values depending on parameters. For each of the examples, consider the following collection:
 
 ```javascript
