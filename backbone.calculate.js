@@ -1,5 +1,5 @@
-// Backbone Calculate v0.0.0
-// (c) MIT License
+// Backbone Calculate v0.0.1
+// MIT License
 
 _.extend(Backbone.Collection.prototype, { 
   
