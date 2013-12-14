@@ -2,7 +2,7 @@ describe('Backbone.Collection', function() {
   beforeEach(function() {
     this.collection = new Backbone.Collection;
     
-    _.each([ { a: 0, b: 0 }, { a: 2, b: 2 } ], function(attrs) {
+    _.each([ { a: 0, b: 0 }, { a: 2, b: 2 }, { a: null, b: undefined } ], function(attrs) {
       this.add(new this.model(attrs));
     }, this.collection);
   });
