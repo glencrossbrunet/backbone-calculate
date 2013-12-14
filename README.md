@@ -1,6 +1,6 @@
 # backbone-calculate ![Build Status](https://travis-ci.org/glencrossbrunet/backbone-calculate.png?branch=master)
 
-The calculation methods are inspired from Rails. This package uses `[underscore-calculate](https://github.com/glencrossbrunet/underscore-calculate)` under the hood which only considers numbers, and returns `undefined` for empty collections. We use this package to graph data from collections. 
+The calculation methods are inspired from Rails. This package uses **[underscore-calculate](https://github.com/glencrossbrunet/underscore-calculate)** under the hood which only considers numbers, and returns `undefined` for empty collections. We use this package to graph data from collections. 
 
 Each calculation method either returns the value, values, or an object with fields and values depending on parameters. For each of the examples, consider the following collection:
 
