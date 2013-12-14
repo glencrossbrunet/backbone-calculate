@@ -43,7 +43,33 @@ describe('Backbone.Collection', function() {
     it('should key-value array of fields', function() {
       expect( this.collection.average([ 'a', 'b' ]) ).toEqual({ a: 1, b: 1 });
     });
+  });
+  
+  describe('#maximum', function() {
+    it('should find max value', function() {
+      expect( this.collection.maximum('a') ).toEqual(2);
+    });
     
-    it('should null bad values', function() {})
+    it('should splat multiple fields', function() {
+      expect( this.collection.maximum('a', 'b') ).toEqual([ 2, 2 ]);
+    });
+    
+    it('should key-value array of fields', function() {
+      expect( this.collection.maximum([ 'a', 'b' ]) ).toEqual({ a: 2, b: 2 });
+    });
+  });
+  
+  describe('#minimum', function() {
+    it('should find max value', function() {
+      expect( this.collection.minimum('a') ).toEqual(0);
+    });
+    
+    it('should splat multiple fields', function() {
+      expect( this.collection.minimum('a', 'b') ).toEqual([ 0, 0 ]);
+    });
+    
+    it('should key-value array of fields', function() {
+      expect( this.collection.minimum([ 'a', 'b' ]) ).toEqual({ a: 0, b: 0 });
+    });
   });
 });

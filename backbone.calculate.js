@@ -1,3 +1,6 @@
+// Backbone Calculate v0.0.0
+// (c) MIT License
+
 _.extend(Backbone.Collection.prototype, { 
   
   calculate: function(method, fields) {
@@ -24,7 +27,7 @@ _.extend(Backbone.Collection.prototype, {
 
 });
 
-_.each([ 'sum', 'average' ], function(name) {
+_.each([ 'sum', 'average', 'maximum', 'minimum' ], function(name) {
   this[name] = function() {
     var args = [ _[name] ].concat(_.toArray(arguments));
     return this.calculate.apply(this, args); 
