@@ -1,0 +1,22 @@
+{
+  "name": "backbone-calculate",
+  "version": "0.0.0",
+  "authors": [ "aj0strow" ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "bower_components",
+    "node_modules",
+    "spec",
+    "Gruntfile.js",
+    ".gitignore"
+  ],
+  "dependencies": {
+    "backbone": "~1.1.0",
+    "underscore": "~1.5.2",
+    "jquery": "~2.0.3"
+  },
+  "devDependencies": {
+    "jasmine": "~1.3.1"
+  }
+}
