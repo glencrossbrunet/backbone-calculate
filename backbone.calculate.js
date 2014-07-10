@@ -11,7 +11,12 @@ _.extend(Backbone.Collection.prototype, {
     if (arguments.length <= 1) return undefined;
 
     if (arguments.length == 2) {
-      if (_.isString(fields)) return method(this.pluck(fields));
+      if (_.isFunction(fields)) {
+        return method(this.map(fields));
+      }
+      if (_.isString(fields)) {
+        return method(this.pluck(fields));
+      }
       if (_.isArray(fields)) {
         return _.reduce(fields, function(object, field) {
           object[field] = this.calculate(method, field);
