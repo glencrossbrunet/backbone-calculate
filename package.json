@@ -1,5 +1,6 @@
 {
   "name": "backbone-calculate",
+  "version": "0.0.3",
   "repository": {
     "type": "git",
     "url": "https://github.com/glencrossbrunet/backbone-calculate"
