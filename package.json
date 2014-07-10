@@ -1,0 +1,11 @@
+{
+  "name": "backbone-calculate",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/glencrossbrunet/backbone-calculate"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-jasmine": "^0.6.5"
+  }
+}
